@@ -1,0 +1,11 @@
+pma:
+  image: dnhsoft/phpmyadmin:4.3.6
+  links:
+   - db
+  ports:
+   - "8001:80"
+
+db:
+  image: tutum/mysql:5.6
+  environment:
+   MYSQL_PASS: 123456
