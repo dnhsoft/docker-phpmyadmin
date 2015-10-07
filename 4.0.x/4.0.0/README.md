@@ -107,3 +107,29 @@
 - `4.0.2` [4.0.2/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/4.0.x/4.0.2/Dockerfile)
 - `4.0.1` [4.0.1/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/4.0.x/4.0.1/Dockerfile)
 - `4.0.0` [4.0.0/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/4.0.x/4.0.0/Dockerfile)
+
+#What is PhpMyAdmin?
+Bring an easy interface to your MySQL databases, running on docker.
+You can find all the relevant info here, in the official [PhpMyAdmin page](https://www.phpmyadmin.net/).
+
+#How to use this image?
+The image does not provide a MySQL server itself. It needs a running instance of MySQL accessible by a host name.
+You need to fill in the following environment variables in order to make the PMA running: 
+- `DBHOST` (defaults to "db")
+- `DBUSER` (defaults to "admin")
+- `DBPASS` (defaults to "123456")
+- `DBUSECOOKIE` (defaults to empty string)
+
+##Using PhpMyAdmin without login
+Here is the examples of how to use the image with docker-compose: [docker-compose.yml](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/examples/custom-host/docker-compose.yml). Simply open your browser to localhost:8001 and you'll have the PhpMyAdmin working. A simpler example with default arguments can be found here: [docker-compose.yml](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/examples/simple/docker-compose.yml).
+ 
+##Using PhpMyAdmin with login
+Here is the examples of how to use the image with docker-compose: [docker-compose.yml](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/examples/use-cookie/docker-compose.yml). Simply open your browser to localhost:8001 and you'll have the PhpMyAdmin asking for login credentials.
+ 
+ 
+#Troubleshooting
+## Connecting to older MySQL databases. 
+You may want use an older version of PhpMyAdmin, e.g. 4.0.0, to connect to MySQL 5.1.
+Then you may have the error "#1273 - Unknown collation: 'utf8mb4_unicode_ci'". 
+This is most probably because you have previously used `localhost:8001` with later PMA versions (supporting MySQL 5.5 and above). PMA saves the collation in a cookie - you need to delete the cookie named  `pma_collation_connection` and the problem will be fixed.
+
