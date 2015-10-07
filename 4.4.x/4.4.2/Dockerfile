@@ -1,3 +1,4 @@
 FROM dnhsoft/phpmyadmin-base:4.x
 
-RUN /install-pma.sh https://files.phpmyadmin.net/phpMyAdmin/4.4.2/phpMyAdmin-4.4.2-all-languages.tar.gz
+ENV PMA_VERSION "4.4.2"
+RUN /install-pma.sh
