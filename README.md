@@ -1,5 +1,5 @@
 # Supported tags and respective `Dockerfile` links
-- `latest` [Latest/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/4.5.x/4.5.0.2/Dockerfile)
+- `latest` [Latest/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/Dockerfile)
 - `4.5.0.2` [4.5.0.2/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/4.5.x/4.5.0.2/Dockerfile)
 - `4.5.0.1` [4.5.0.1/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/4.5.x/4.5.0.1/Dockerfile)
 - `4.5.0` [4.5.0/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/4.5.x/4.5.0/Dockerfile)
