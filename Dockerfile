@@ -1,4 +1,4 @@
 FROM dnhsoft/phpmyadmin-base:4.x
 
-ENV PMA_VERSION "4.0.3"
+ENV PMA_VERSION "4.0.4"
 RUN /install-pma.sh
