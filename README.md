@@ -135,7 +135,7 @@ You need to fill in the following environment variables in order to make the PMA
 ## Using PhpMyAdmin without login
 Here is the examples of how to use the image with docker-compose: [docker-compose.yml](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/examples/custom-host/docker-compose.yml). Simply open your browser to localhost:8001 and you'll have the PhpMyAdmin working. A simpler example with default arguments can be found here: [docker-compose.yml](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/examples/simple/docker-compose.yml).
  
-##Using PhpMyAdmin with login
+##Using PhpMyAdmin with login 
 Here is the examples of how to use the image with docker-compose: [docker-compose.yml](https://github.com/dnhsoft/docker-phpmyadmin/blob/master/examples/use-cookie/docker-compose.yml). Simply open your browser to localhost:8001 and you'll have the PhpMyAdmin asking for login credentials.
  
  
