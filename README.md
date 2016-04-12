@@ -1,4 +1,5 @@
 # Supported tags and respective `Dockerfile` links
+- `4.6.0` [4.6.0/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/4.6.0/Dockerfile)
 - `4.6.0-rc2` [4.6.0-rc2/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/4.6.0-rc2/Dockerfile)
 - `4.6.0-rc1` [4.6.0-rc1/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/4.6.0-rc1/Dockerfile)
 - `4.6.0-alpha1` [4.6.0-alpha1/Dockerfile](https://github.com/dnhsoft/docker-phpmyadmin/blob/4.6.0-alpha1/Dockerfile)
