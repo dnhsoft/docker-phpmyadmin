@@ -1,7 +1,4 @@
-FROM dnhsoft/phpmyadmin-base:4.x
+FROM dnhsoft/phpmyadmin-base:4.x-php7
 
-# make it compatible with dnhsoft/mysql-utf8:5.7
-ENV DBUSER root
-
-ENV PMA_VERSION "4.6.3"
+ENV PMA_VERSION "4.6.4"
 RUN /install-pma.sh

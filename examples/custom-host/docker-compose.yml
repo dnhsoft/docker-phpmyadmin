@@ -1,15 +1,14 @@
 pma:
-  image: dnhsoft/phpmyadmin:latest
+  image: dnhsoft/phpmyadmin:4.6.4
   links:
    - db1
   ports:
    - "8001:80"
   environment:
    DBHOST: db1
-   DBUSER: admin
    DBPASS: 3456789
 
 db1:
-  image: tutum/mysql:5.6
+  image: dnhsoft/mysql-utf8:5.7
   environment:
-   MYSQL_PASS: 3456789
+   MYSQL_ROOT_PASSWORD: 3456789
